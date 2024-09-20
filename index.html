@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Myntra Clone</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bag.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -43,26 +44,27 @@
           <span class="action_name">Wishlist</span>
         </div>
 
-        <div class="action-container">
+        <a class="action-container" href="bag.html">
           <span class="material-symbols-outlined action_icon"> shopping_bag </span>
           <span class="action_name">Bag</span>
-        </div>
+          <span class="bag-item-count"></span>
+        </a>
        
       </div>
       </div>
     </header>
-    <!-- Main -->
 
+    <!-- Main -->
+<!-- Banner -->
     <main class="banner_container">
 <img src="images/banner.jpg" class="banner_img" alt="banner image">
 
-<div class="product-container"></div>
-  <div class="item-container">
-    <img src="images/1.jpg" alt="">
-  </div>
+<!-- Functional Products Section -->
+<div class="product-container">
 
 </div>
-
+ 
+<!-- Category Section -->
 <div class="text-banner-container">
   <h4 class="text-banner-title">Medal Worthy Brands To Bag</h4>
   <div class="category-items">
@@ -144,8 +146,7 @@
 </div>
     </div>
   </footer>
-    
-
+  <script src="data/products.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

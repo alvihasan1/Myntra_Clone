@@ -13,6 +13,11 @@ header {
   height: 80px;
   width: 100%;
   border-bottom: 2px solid whitesmoke;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 10;
+  background-color: #fff;
 }
 
 .logo {
@@ -42,7 +47,7 @@ header {
   transition: left 0.2s ease-out, width 0.2s ease-out;
   font-weight: 700;
   text-transform: uppercase;
-  border-bottom: 3px solid white;
+  border-bottom: 5px solid white;
   padding: 28px 0px;
 }
 
@@ -99,12 +104,15 @@ sup {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-decoration: none;
+  color: #000;
 }
 
 .action_name {
   font-size: 12px;
   color: #000;
   font-weight: 700;
+  cursor: pointer;
 }
 
 /* Main Section */
@@ -130,7 +138,8 @@ sup {
   font-weight: 700;
 }
 
-.category-items {
+.category-items,
+.product-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -168,4 +177,110 @@ sup {
   font-size: 14px;
   margin-bottom: 15%;
   background-color: transparent;
+}
+
+.product-container {
+  width: 90%;
+  margin: 40px 5%;
+}
+
+.item-container {
+  width: 240px;
+  margin-bottom: 10px;
+}
+
+.product-img {
+  width: 100%;
+}
+
+.rating {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.company-name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: #282c3f;
+  margin-bottom: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item-name {
+  color: #535766;
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  display: block;
+}
+
+.price {
+  font-size: 14px;
+  line-height: 15px;
+  color: #282c3f;
+  white-space: nowrap;
+  margin-top: 8px;
+}
+
+.current-price {
+  font-size: 14px;
+  color: #282c3f;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #7e818c;
+  font-weight: 400;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.discount {
+  color: #ff905a;
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.btn-add-bag {
+  margin-top: 8px;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#star {
+  font-size: 14px;
+  color: orange;
+}
+
+.bag-item-count {
+  background-color: #f16565;
+  white-space: nowrap;
+  line-height: 18px;
+  padding: 0 6px;
+  height: 18px;
+  position: relative;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  left: 10px;
+  top: -42px;
+  cursor: pointer;
+  font-weight: 700;
 }
